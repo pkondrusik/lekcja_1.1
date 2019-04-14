@@ -5,6 +5,7 @@ public class Main {
         zad1();
         zad2();
         zad3();
+        zad4();
     }
 
     public static void zad1(){
@@ -54,5 +55,23 @@ public class Main {
         double stopnieF = stopnieC * 1.8 + 32;
         System.out.println("zadanie 3");
         System.out.println(stopnieC + " stopni celcjusza, to " + stopnieF + " stopni farenheita");
+    }
+
+    public static void zad4(){
+
+        int liczba = 1234;
+        int a = liczba;
+        double suma = 0;
+        int licznik = 0;
+
+        while (a != 0){
+            suma += a % 10;
+            a = (a - (a % 10)) / 10;
+            licznik += 1;
+        }
+
+        System.out.println("zadanie 4");
+        System.out.println("Suma cyfr liczby " + liczba + " wynosi " + suma);
+        System.out.println("Srednia cyfr tej liczby to " + suma / licznik);
     }
 }
