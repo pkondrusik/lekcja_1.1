@@ -59,8 +59,9 @@ public class Main {
 
     public static void zad4(){
 
+
         int liczba = 1234;
-        int a = liczba;
+/*        int a = liczba;
         double suma = 0;
         int licznik = 0;
 
@@ -69,9 +70,23 @@ public class Main {
             a = (a - (a % 10)) / 10;
             licznik += 1;
         }
+*/
+        int x = liczba;
+        double suma1 = 0;
+
+        suma1 += x % 10;
+        x = (x - (x % 10)) / 10;
+
+        suma1 += x % 10;
+        x = (x - (x % 10)) / 10;
+
+        suma1 += x % 10;
+        x = (x - (x % 10)) / 10;
+
+        suma1 += x % 10;
 
         System.out.println("zadanie 4");
-        System.out.println("Suma cyfr liczby " + liczba + " wynosi " + suma);
-        System.out.println("Srednia cyfr tej liczby to " + suma / licznik);
+        System.out.println("Suma cyfr liczby " + liczba + " wynosi " + suma1);
+        System.out.println("Srednia cyfr tej liczby to " + suma1 / 4);
     }
 }
