@@ -6,6 +6,7 @@ public class Main {
         zad2();
         zad3();
         zad4();
+        zad5();
     }
 
     public static void zad1(){
@@ -89,4 +90,26 @@ public class Main {
         System.out.println("Suma cyfr liczby " + liczba + " wynosi " + suma1);
         System.out.println("Srednia cyfr tej liczby to " + suma1 / 4);
     }
+
+
+    public static void zad5(){
+
+        int a = 1;
+        int b = 111;
+        int c = 2;
+        int max = a;
+        int min = a;
+
+        if (b > max) max = b;
+        if (b < min) min = b;
+
+        if (c > max) max = c;
+        if (c < min) min = c;
+
+        System.out.println("zadanie 5");
+        System.out.println("Podane liczby to: " + a + ", " + b + " i " + c);
+        System.out.println("najwieksza liczba to " + max);
+        System.out.println("najmniejsza liczba to " + min);
+    }
+
 }
