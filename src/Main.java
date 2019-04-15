@@ -13,7 +13,7 @@ public class Main {
     public static void zad1(){
 
         boolean takNie = true;
-        char a = 't';
+        char a = 'a';
         int b = 123;
         long c = 1234;
         float d = 123456;
@@ -21,6 +21,7 @@ public class Main {
         String f = "test";
 
         System.out.println("zadanie 1");
+        System.out.println(takNie);
         System.out.println(a);
         System.out.println(b);
         System.out.println(c);
