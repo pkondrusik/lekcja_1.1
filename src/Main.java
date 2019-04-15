@@ -36,19 +36,43 @@ public class Main {
         double a = 123;
         double b = 12;
         double suma = a + b;
-        double roznica = a - b;
+        double roznica_ab = a - b;
+        double roznica_ba = b - a;
         double iloczyn = a * b;
-        double iloraz = a / b;
-        double mod = a % b;
+        double iloraz = 0;
+        double mod = 0;
 
         System.out.println("\nzadanie 2");
-        System.out.println(a + " liczba a");
-        System.out.println(b + " liczba b");
-        System.out.println(suma + " to ich suma");
-        System.out.println(roznica + " to ich roznica (a-b)");
-        System.out.println(iloczyn + " to ich iloczyn");
-        System.out.println(iloraz + " to ich iloraz (a/b)");
-        System.out.println(mod + " to ich modulo (a%b)");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        System.out.println("a + b = " + suma);
+        System.out.println("a - b = " + roznica_ab);
+        System.out.println("b - a = " + roznica_ba);
+        System.out.println("a * b = " + iloczyn);
+
+        if (b != 0) {
+            iloraz = a / b;
+            System.out.println("a / b = " + iloraz);
+        }
+        else System.out.println("a / b = przez 0 nie dzielimy!");
+
+        if (a != 0) {
+            iloraz = b / a;
+            System.out.println("b / a = " + iloraz);
+        }
+        else System.out.println("b / a = przez 0 nie dzielimy!");
+
+        if (b != 0) {
+            mod = a % b;
+            System.out.println("a % b = " + mod);
+        }
+        else System.out.println("a % b = przez 0 nie dzielimy!");
+
+        if (a != 0) {
+            mod = b % a;
+            System.out.println("b % a = " + mod);
+        }
+        else System.out.println("b % a = przez 0 nie dzielimy!");
 
     }
 
@@ -57,13 +81,13 @@ public class Main {
         double stopnieC = 5;
         double stopnieF = stopnieC * 1.8 + 32;
         System.out.println("\nzadanie 3");
-        System.out.println(stopnieC + " stopni celcjusza, to " + stopnieF + " stopni farenheita");
+        System.out.println(stopnieC + " stopni Celcjusza, to " + stopnieF + " stopni Fahrenheita");
     }
 
     public static void zad4(){
 
 
-        int liczba = 1234;
+        int liczba = 1230;
 /*        int a = liczba;
         double suma = 0;
         int licznik = 0;
