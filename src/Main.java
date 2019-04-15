@@ -40,7 +40,7 @@ public class Main {
         double iloraz = a / b;
         double mod = a % b;
 
-        System.out.println("zadanie 2");
+        System.out.println("\nzadanie 2");
         System.out.println(a + " liczba a");
         System.out.println(b + " liczba b");
         System.out.println(suma + " to ich suma");
@@ -55,7 +55,7 @@ public class Main {
 
         double stopnieC = 5;
         double stopnieF = stopnieC * 1.8 + 32;
-        System.out.println("zadanie 3");
+        System.out.println("\nzadanie 3");
         System.out.println(stopnieC + " stopni celcjusza, to " + stopnieF + " stopni farenheita");
     }
 
@@ -87,7 +87,7 @@ public class Main {
 
         suma1 += x % 10;
 
-        System.out.println("zadanie 4");
+        System.out.println("\nzadanie 4");
         System.out.println("Suma cyfr liczby " + liczba + " wynosi " + suma1);
         System.out.println("Srednia cyfr tej liczby to " + suma1 / 4);
     }
@@ -107,7 +107,7 @@ public class Main {
         if (c > max) max = c;
         if (c < min) min = c;
 
-        System.out.println("zadanie 5");
+        System.out.println("\nzadanie 5");
         System.out.println("Podane liczby to: " + a + ", " + b + " i " + c);
         System.out.println("najwieksza liczba to " + max);
         System.out.println("najmniejsza liczba to " + min);
@@ -115,6 +115,19 @@ public class Main {
 
     public static void zad6(){
 
+        double bmi = 0;
+        double wzrost = 2;
+        double waga = 150;
 
+        bmi = waga / (wzrost * wzrost);
+
+        System.out.println("\nzadanie 6");
+        System.out.print("Dla wzrostu " + wzrost + "m i wagi " + waga + "kg ");
+        System.out.print("BMI wynosi: " + bmi + " i oznacza ");
+
+        if (bmi > 18.5)
+            if (bmi < 24.9) System.out.println("wage prawidlowa!");
+            else System.out.println("nadwage!");
+        else System.out.println("niedowage!");
     }
 }
