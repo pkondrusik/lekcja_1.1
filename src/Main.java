@@ -7,6 +7,7 @@ public class Main {
         zad3();
         zad4();
         zad5();
+        zad6();
     }
 
     public static void zad1(){
@@ -31,8 +32,8 @@ public class Main {
 
     public static void zad2(){
 
-        int a = 123;
-        int b = 12;
+        double a = 123;
+        double b = 12;
         double suma = a + b;
         double roznica = a - b;
         double iloczyn = a * b;
@@ -112,4 +113,8 @@ public class Main {
         System.out.println("najmniejsza liczba to " + min);
     }
 
+    public static void zad6(){
+
+
+    }
 }
